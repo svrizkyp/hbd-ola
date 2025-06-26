@@ -189,7 +189,7 @@ svg.line{fill: none;stroke-width: 2;animation: moving .7s linear infinite altern
 <body>
 	
    <!-- Ganti Audio di sini -->
-   <audio src="https://feeldreams.github.io/audio/janjisuci.mp3" id="linkmp3" class="sembunyi"></audio>
+   <audio src="music/stecu.mp3" id="linkmp3" class="sembunyi"></audio>
    
    <div id="bodyblur">
      <!-- Wallpaper / Background --><img src="https://feeldreams.github.io/wpeach.jpg" id="wallpaper"/>
@@ -477,6 +477,15 @@ function multifungsi(){
     }
     bqmuncul();
     }
+</script>
+
+<script>
+  var audio = document.getElementById("linkmp3");
+
+  audio.addEventListener("ended", function() {
+    audio.currentTime = 0;
+    audio.play();
+  });
 </script>
 <!-- Sampai Sini -->
 </body>
